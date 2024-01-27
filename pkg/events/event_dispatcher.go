@@ -1,6 +1,8 @@
 package events
 
-import "errors"
+import (
+	"errors"
+)
 
 var ErrHandlerAlreadyRegistered = errors.New("handler already registered")
 

@@ -106,6 +106,7 @@ func (suite *EventDispatcherTestSuite) TestEventDispatcher_Has() {
 
 	assert.True(suite.T(), suite.eventDispatcher.Has(suite.event.GetName(), &suite.handler))
 	assert.True(suite.T(), suite.eventDispatcher.Has(suite.event.GetName(), &suite.handler2))
+	assert.False(suite.T(), suite.eventDispatcher.Has(suite.event.GetName(), &suite.handler3))
 }
 
 func TestSuite(t *testing.T) {
